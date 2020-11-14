@@ -1,8 +1,11 @@
 1. Update settings
     * Setting file: weather-api/src/main/resources/config.yaml
 2. weather-api project implemented 2 APIs:
+
 	2.1 Get weather by city
+	
 		* Endpoint : /api/weather/{countryName}/{cityName}
+		
 		* Headers :
 			- Requester-ID : the ID of the requester
 		* URI params:
