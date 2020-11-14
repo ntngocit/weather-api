@@ -17,6 +17,7 @@
 			- Response: 
 			{ "NewDataSet": { "Location": "Melbourne", "Time": "11 AM", "Wind": "15 km per hour", "Visibility": "10 km", "SkyConditions": "sunny", "Temperature": "18", "DewPoint": "2 C", "RelativeHumidity": "35", "Status": "Normal" } }
 	2.2 Get cities of country 
+	
 		* Endpoint : /api/cities/{countryName} 
 		* Headers : 
 			- Requester-ID : the ID of the requester 
