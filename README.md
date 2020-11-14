@@ -1,4 +1,3 @@
-# weather-api
 1. Update settings
     * Setting file: weather-api/src/main/resources/config.yaml
 2. weather-api project implemented 2 APIs: 
