@@ -1,0 +1,7 @@
+weather_soap:
+  wsdl_location: "global-weather.wsdl"
+  service: "GlobalWeather"
+  port: "GlobalWeatherSoap"
+  address: "http://localhost:8080/GlobalWeather"
+http:
+  port: "8081"

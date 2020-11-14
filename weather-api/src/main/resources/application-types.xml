@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="CityXMLSchema" format="xml">
+      <types:shape format="xml-schema" element="{http://www.example.org/CityXMLSchema}data" location="schemas/CityXMLSchema.xsd"/>
+    </types:type>
+    <types:type name="CityJsonSchema" format="json">
+      <types:shape format="json-schema" location="schemas/CityJsonSchema.json"/>
+    </types:type>
+  </types:catalog>
+</types:mule>

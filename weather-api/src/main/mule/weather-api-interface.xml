@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+    <flow name="weather-api-main" doc:id="2a1a61f8-baf6-4d7d-8d04-d01d5667d78a">
+        <http:listener doc:name="Weather_Listener" doc:id="6d22d269-9f8f-4e2a-925d-62814f2b72f4" config-ref="HTTP_Listener_config" path="/api/*">
+            <http:response statusCode="#[vars.httpStatus default 200]">
+                <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
+            </http:response>
+            <http:error-response statusCode="#[vars.httpStatus default 500]">
+                <http:body><![CDATA[#[payload]]]></http:body>
+                <http:headers><![CDATA[#[vars.outboundHeaders default {}]]]></http:headers>
+            </http:error-response>
+        </http:listener>
+        <apikit:router doc:name="APIkit Router" doc:id="af6e96b0-99c4-43e6-9804-3c80fd9c12cb" config-ref="weather-api-configuration" />
+        <error-handler>
+            <on-error-continue enableNotifications="true" logException="true" doc:name="Bad Request Error Continue" doc:id="677d4628-b4e4-48a7-b499-c8426981c6e5" type="APIKIT:BAD_REQUEST">
+                <ee:transform doc:name="Copy_of_Transform Message" doc:id="6919c6c9-c558-40e1-b4f1-f831b6123481" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Bad request"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[400]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-continue>
+            <on-error-propagate enableNotifications="true" logException="true" doc:name="Not Found Error Propagate" doc:id="84f3e8e4-dc62-439c-ba0a-b43799265e77" type="APIKIT:NOT_FOUND">
+                <ee:transform doc:name="Copy_of_Transform Message" doc:id="639d16ee-6910-489a-a371-ab552673cae8" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Resource not found"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[404]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate enableNotifications="true" logException="true" doc:name="Method Not Allowed Error Propagate" doc:id="9e66cf56-2dbc-4cf6-8d48-e4f67bcc365d" type="APIKIT:METHOD_NOT_ALLOWED">
+                <ee:transform doc:name="Copy_of_Transform Message" doc:id="45f38180-54d3-4f55-8873-0526667aa10a" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Method not allowed"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[405]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate enableNotifications="true" logException="true" doc:name="Not Acceptable Error Propagate" doc:id="eb9746e7-3c26-4d49-99d2-1f916d19a397" type="APIKIT:NOT_ACCEPTABLE">
+                <ee:transform doc:name="Copy_of_Transform Message" doc:id="04b55636-5287-43c6-bd1c-80edc0f611ab" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Not acceptable"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[406]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate enableNotifications="true" logException="true" doc:name="Unsupported Media Type Error Propagate" doc:id="bb2f7532-0e6f-48cd-8ff3-ab4d6bf04a73" type="APIKIT:UNSUPPORTED_MEDIA_TYPE">
+                <ee:transform doc:name="Copy_of_Transform Message" doc:id="e1752e85-c0bf-4750-98de-9ae1f78ed730" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Unsupported media type"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[415]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+            <on-error-propagate enableNotifications="true" logException="true" doc:name="Not Implemented Error Propagate" doc:id="57556262-2390-4e43-92a1-fb3a53d77048" type="APIKIT:NOT_IMPLEMENTED">
+                <ee:transform doc:name="Copy_of_Transform Message" doc:id="32fea9ef-2621-4353-b68d-ac27954883d5" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+                    <ee:message>
+                        <ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{message: "Not Implemented"}]]></ee:set-payload>
+                    </ee:message>
+                    <ee:variables>
+                        <ee:set-variable variableName="httpStatus"><![CDATA[501]]></ee:set-variable>
+                    </ee:variables>
+                </ee:transform>
+            </on-error-propagate>
+        </error-handler>
+    </flow>
+    <flow name="get:\cities:weather-api-configuration">
+		<flow-ref doc:name="Flow Reference" doc:id="a8f63b80-0906-4fce-8fe0-d85aa9bad47f" name="GetCitiesByCountryFlow"/>
+    </flow>
+    <flow name="get:\weather:weather-api-configuration">
+		<flow-ref doc:name="Flow Reference" doc:id="e31ebfa5-dba0-4b7f-9c03-21cc32dc6f29" name="GetWeatherFlow"/>
+    </flow>
+</mule>

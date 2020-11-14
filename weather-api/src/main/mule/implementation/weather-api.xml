@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:wsc="http://www.mulesoft.org/schema/mule/wsc"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/wsc http://www.mulesoft.org/schema/mule/wsc/current/mule-wsc.xsd">
+	<flow name="GetWeatherFlow" doc:id="011cce18-d9e7-45e9-ac93-3a2b87a2f695" >
+		<ee:transform doc:name="Transform Message" doc:id="05d287b8-8923-48e1-aaf6-8314ea0a4a44" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	GetWeather: {
+		CityName: attributes.uriParams.countryName,
+		CountryName: attributes.uriParams.cityName
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<wsc:consume doc:name="Consume" doc:id="01f168d2-5e1c-45a9-8951-133cd4795e21" config-ref="Web_Service_Consumer_Config" operation="GetWeather"/>
+		<ee:transform doc:name="Transform Message" doc:id="fc1102ea-bcf0-4b8b-8fb6-08905ad1b810" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{data:payload.body.GetWeatherResponse as String replace "]" with ("") as String replace ("<![CDATA[") with("") as String replace "&lt;" with ("<") as String replace "&gt;" with (">") as String replace "\n" with ("")  as String replace (">>") with (">") }]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="c5444496-9d70-40fa-83c3-95fc4c4a6c26" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+read(payload.data,"application/xml")]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="f06da99d-ff74-48da-bd44-c071dab57b81" message="#[payload]"/>
+	</flow>
+	<flow name="GetCitiesByCountryFlow" doc:id="91be8b7b-6f3b-431a-bc70-7371f9d86a68" >
+		<ee:transform doc:name="Transform Message" doc:id="1b64f2e9-a194-4209-aa76-9d9aec9be51c" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+{
+	GetCitiesByCountry: {
+		CountryName: attributes.uriParams.CountryName
+	}
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<wsc:consume doc:name="Consume" doc:id="e8fd19bb-9ec4-4a1a-bf60-99a4f3f47e23" config-ref="Web_Service_Consumer_Config" operation="GetCitiesByCountry"/>
+		<ee:transform doc:name="Transform Message" doc:id="6c53e8d5-b9e8-456e-99ea-66f894cf2fbb" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/xml
+---
+data:payload.body.GetCitiesByCountryResponse as String replace "&lt;" with ("<") as String replace "&gt;" with (">") as String replace "\n" with ("")]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="ef05453d-6d6e-4a6f-82d7-9eeb1ee2effc" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+read(payload.data,"application/xml")]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<ee:transform doc:name="Transform Message" doc:id="027518e2-e6b3-4dc9-9f11-d38104a77d50" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+
+	payload.NewDataSet.*Table map((value,index)->{
+		city:value.City
+	})
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<logger level="INFO" doc:name="Logger" doc:id="9b8e6716-26e7-4fd7-8029-407692ee61ae" message="#[payload]"/>
+	</flow>
+	
+</mule>

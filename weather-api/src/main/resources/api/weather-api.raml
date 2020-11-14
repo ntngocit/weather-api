@@ -1,0 +1,76 @@
+#%RAML 1.0
+title: WEATHER API
+
+baseUri: http://localhost:8081/weatherapi/{version}
+version: v1
+mediaType: application/json
+
+/cities/{countryName}:
+  get:
+    description: Retrieve the cities of a given country
+    headers:
+      Requester-ID:
+        description: the ID of the requester
+        required: true
+    responses:
+          200:
+            body:
+              application/json:
+                example: | 
+                 {
+                    "data": {
+                      "Melbourne",
+                      "Sydney",
+                      "Brisbane",
+                      "Perth",
+                      "Adelaide",
+                      "Gold Coast",
+                      "Canberra",
+                      "Sunshine Coast",
+                      "Wollongong",
+                      "Geelong",
+                      "Hobart",
+                      "Darwin",
+                      "Alice Springs",
+                      "Devonport",
+                      "Bendigo",
+                      "Busselton"
+                      },
+                    "success": true,
+                    "status": 200
+                    }
+          404:
+            body:
+              application/json:
+                example: {"message": "Cities not found"}
+/weather/{countryName}/{cityName}:
+  get:
+    description: Get the weather of a specific city belonging to a specific country
+    headers:
+      Requester-ID:
+        description: the ID of the requester
+        required: true
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "data": {
+                "Location": "Melbourne",
+                "Time": "11 AM",
+                "Wind": "15 km per hour",
+                "Visibility": "10 km",
+                "SkyConditions": "sunny",
+                "Temperature": "18",
+                "DewPoint": "2 C",
+                "RelativeHumidity": "35",
+                "Status": "Normal"
+                },
+                "success": true,
+                "status": 200
+                }
+      404:
+        body:
+          application/json:
+            example: {"message": "Weather not found"}

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="weather-api-test-suite.xml" />
+	<munit:test name="weather-api-test-suite-GetWeatherFlowTest" doc:id="3af254eb-c486-4d0b-929b-017d4e64d4a1" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to GetWeatherFlow" doc:id="f8106d2a-f593-4a57-83e4-d230421603a4" name="GetWeatherFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="eee0914e-97b5-45c5-8e1d-d307bfd83ca9" actual="#[payload]" expected='#[{
+  "NewDataSet": {
+    "Location": "Melbourne",
+    "Time": "11 AM",
+    "Wind": "15 km per hour",
+    "Visibility": "10 km",
+    "SkyConditions": "sunny",
+    "Temperature": "18",
+    "DewPoint": "2 C",
+    "RelativeHumidity": "35",
+    "Status": "Normal"
+  }
+}]' message='#["Melbourne weather"]'/>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="weather-api-test-suite-GetCitiesByCountryFlowTest" doc:id="373f40e6-e002-4a06-bf74-b2ab88637c6f" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to GetCitiesByCountryFlow" doc:id="7e3d526b-8497-4461-94c5-b5515406a7b2" name="GetCitiesByCountryFlow"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="69259520-968d-4440-b68f-265eff35af62" actual="#[payload]" expected='#[[
+  {
+    "city": "Archerfield Aerodrome"
+  },
+  {
+    "city": "Amberley Aerodrome"
+  },
+  {
+    "city": "Alice Springs Aerodrome"
+  },
+  {
+    "city": "Brisbane Airport M. O"
+  },
+  {
+    "city": "Coolangatta Airport Aws"
+  },
+  {
+    "city": "Cairns Airport"
+  },
+  {
+    "city": "Charleville Airport"
+  },
+  {
+    "city": "Gladstone"
+  },
+  {
+    "city": "Longreach Airport"
+  },
+  {
+    "city": "Mount Isa Amo"
+  },
+  {
+    "city": "Mackay Mo"
+  },
+  {
+    "city": "Oakey Aerodrome"
+  },
+  {
+    "city": "Proserpine Airport"
+  },
+  {
+    "city": "Rockhampton Airport"
+  },
+  {
+    "city": "Broome Airport"
+  },
+  {
+    "city": "Townsville Amo"
+  },
+  {
+    "city": "Weipa City"
+  },
+  {
+    "city": "Gove Airport"
+  },
+  {
+    "city": "Tennant Creek Airport"
+  },
+  {
+    "city": "Yulara Aws"
+  },
+  {
+    "city": "Albury Airport"
+  },
+  {
+    "city": "Devonport East"
+  },
+  {
+    "city": "Goldstream Aws"
+  },
+  {
+    "city": "East Sale Aerodrome"
+  },
+  {
+    "city": "Hobart Airport"
+  },
+  {
+    "city": "Launceston Airport"
+  },
+  {
+    "city": "Laverton Aerodrome"
+  },
+  {
+    "city": "Moorabbin Airport Aws"
+  },
+  {
+    "city": "Mount Gambier Aerodrome"
+  },
+  {
+    "city": "Mildura Airport"
+  },
+  {
+    "city": "Melbourne Airport"
+  },
+  {
+    "city": "Macquarie Island"
+  },
+  {
+    "city": "Wynyard West"
+  },
+  {
+    "city": "Adelaide Airport"
+  },
+  {
+    "city": "Albany Airport"
+  },
+  {
+    "city": "Broken Hill Patton Street"
+  },
+  {
+    "city": "Ceduna Airport"
+  },
+  {
+    "city": "Derby"
+  },
+  {
+    "city": "Darwin Airport"
+  },
+  {
+    "city": "Bullsbrook Pearce Amo"
+  },
+  {
+    "city": "Edinburgh M. O."
+  },
+  {
+    "city": "Forrest Airport"
+  },
+  {
+    "city": "Geraldton Airport"
+  },
+  {
+    "city": "Kalgoorlie Boulder Amo"
+  },
+  {
+    "city": "Kununurra Kununurra Aws"
+  },
+  {
+    "city": "Leigh Creek Airport"
+  },
+  {
+    "city": "Learmonth Airport"
+  },
+  {
+    "city": "Meekatharra Airport"
+  },
+  {
+    "city": "Port Hedland Pardoo"
+  },
+  {
+    "city": "Parafield Airport"
+  },
+  {
+    "city": "Belmont Perth Airport"
+  },
+  {
+    "city": "Katherine Aerodrome"
+  },
+  {
+    "city": "Woomera Aerodrome"
+  },
+  {
+    "city": "Bankstown Airport Aws"
+  },
+  {
+    "city": "Canberra"
+  },
+  {
+    "city": "Coffs Harbour Mo"
+  },
+  {
+    "city": "Cooma"
+  },
+  {
+    "city": "Camden Airport"
+  },
+  {
+    "city": "Dubbo"
+  },
+  {
+    "city": "Norfolk Island Airport"
+  },
+  {
+    "city": "Nowra Ran Air Station"
+  },
+  {
+    "city": "Richmond Aus-Afb"
+  },
+  {
+    "city": "Sydney Airport"
+  },
+  {
+    "city": "Tamworth Airport"
+  },
+  {
+    "city": "Wagga Airport"
+  },
+  {
+    "city": "Williamtown Aerodrome"
+  }
+]]' message='#["Cities in Australia"]'/>
+		</munit:validation>
+	</munit:test>
+
+</mule>

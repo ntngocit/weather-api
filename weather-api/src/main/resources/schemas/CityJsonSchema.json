@@ -1,0 +1,33 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"location":{
+			"type":"string"
+		},
+		"time":{
+			"type":"string"
+		},
+		"wind":{
+			"type":"string"
+		},
+		"visibility":{
+			"type":"string"
+		},
+		"skyconditions":{
+			"type":"string"
+		},
+		"temperature":{
+			"type":"string"
+		},
+		"dewpoint":{
+			"type":"string"
+		},
+		"relativeHumidity":{
+			"type":"string"
+		},
+		"status":{
+			"type":"string"
+		},
+	}
+}
