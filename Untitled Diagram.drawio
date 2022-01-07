@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T05:54:06.189Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="NZQ90150p6-zhxFuDnY-" version="16.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-07T05:58:00.286Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="aRy74OafnTCKFqDgR1YJ" version="16.2.2" type="github">
   <diagram id="lh8g20T3pPVSp0PFc99V" name="Page-1">
     <mxGraphModel dx="1042" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,7 +7,7 @@
         <mxCell id="Meal1JP8hrc1P90qUYBF-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Meal1JP8hrc1P90qUYBF-1" target="Meal1JP8hrc1P90qUYBF-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#B3B3B3;strokeColor=#B3B3B3;" parent="1" vertex="1">
           <mxGeometry x="89.83" y="40" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-6" value="Machine" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
@@ -25,7 +25,7 @@
             <mxPoint y="-7" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-2" value="Permission Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-2" value="Permission Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#B3B3B3;" parent="1" vertex="1">
           <mxGeometry x="89.83" y="160" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Meal1JP8hrc1P90qUYBF-3" target="Meal1JP8hrc1P90qUYBF-4" edge="1">
@@ -56,7 +56,7 @@
             <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-3" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-3" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#B3B3B3;" parent="1" vertex="1">
           <mxGeometry x="89.83" y="280" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Meal1JP8hrc1P90qUYBF-4" edge="1">
@@ -108,7 +108,7 @@
             <mxPoint x="33" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-8" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-8" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#B3B3B3;" parent="1" vertex="1">
           <mxGeometry x="489.83" y="280" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-11" value="SPA / User Agent &lt;br&gt;Based App" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Meal1JP8hrc1P90qUYBF-9" target="Meal1JP8hrc1P90qUYBF-8" edge="1">
@@ -121,10 +121,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-9" value="Client Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-9" value="Client Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="689.83" y="280" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-12" value="Private APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-12" value="Private APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#999999;" parent="1" vertex="1">
           <mxGeometry x="49.83" y="560" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Meal1JP8hrc1P90qUYBF-14" target="Meal1JP8hrc1P90qUYBF-28" edge="1">
@@ -162,7 +162,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-14" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-14" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="689.83" y="400" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-16" value="WAF (App Gateway)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
@@ -201,11 +201,38 @@
         <mxCell id="Meal1JP8hrc1P90qUYBF-27" value="Rate Limiting / Throttling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="49.83" y="900" width="770.17" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-28" value="API Resource" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-28" value="API Resource" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCFFFF;strokeColor=#009999;" parent="1" vertex="1">
           <mxGeometry x="49.83" y="960" width="770.17" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-13" value="Public APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-13" value="Public APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#999999;" parent="1" vertex="1">
           <mxGeometry x="229.83" y="560" width="590.17" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-1" value="Client is Oauth 2.0 capable?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="249.82999999999998" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-2" value="Client is Oauth 2.0 capable?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#B3B3B3;" vertex="1" parent="1">
+          <mxGeometry x="249.82999999999998" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-3" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#B3B3B3;strokeColor=#B3B3B3;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-4" value="Permission Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#B3B3B3;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-5" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#B3B3B3;strokeColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-6" value="Permission Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-7" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-8" value="Client is Oauth 2.0 capable?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="249.82999999999998" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qfwY-xCNZpurzo1vHarQ-9" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#B3B3B3;strokeColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="489.83" y="280" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
