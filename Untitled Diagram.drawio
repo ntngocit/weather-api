@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T05:05:59.789Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="zzFi529sIYcn7nFw9ZyI" version="16.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-07T05:09:59.724Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="neEISvBEWWqz4rWsfP8y" version="16.2.2" type="github">
   <diagram id="lh8g20T3pPVSp0PFc99V" name="Page-1">
     <mxGraphModel dx="613" dy="335" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -40,19 +40,19 @@
         <mxCell id="Meal1JP8hrc1P90qUYBF-9" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="280" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-12" value="Private APIs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry y="560" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-13" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-13" value="Public APIs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="180" y="560" width="620" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-14" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="400" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-16" value="WAF (App Gateway)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry y="610" width="800" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-17" value="Transport Layer Security (TLS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry y="660" width="800" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-18" value="IP Whilelist" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -72,6 +72,21 @@
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-23" value="OAuth 2.0 (Authorisation Code)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="720" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-24" value="HTTP Basic Auth" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="790" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-25" value="JSON and XML Threat Protection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="790" width="690" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-26" value="CORS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="840" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-27" value="Rate Limiting / Throttling" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="900" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-28" value="API Resource" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="960" width="800" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
