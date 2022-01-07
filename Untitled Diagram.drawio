@@ -1,92 +1,201 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T05:09:59.724Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="neEISvBEWWqz4rWsfP8y" version="16.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-07T05:29:25.143Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="_zIPiuZ8ZNYHAxrmkEKz" version="16.2.2" type="github">
   <diagram id="lh8g20T3pPVSp0PFc99V" name="Page-1">
-    <mxGraphModel dx="613" dy="335" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="695" dy="365" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Meal1JP8hrc1P90qUYBF-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-1" target="Meal1JP8hrc1P90qUYBF-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-1" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="40" y="40" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="40" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-2" target="Meal1JP8hrc1P90qUYBF-3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-6" value="Machine" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry y="39" relative="1" as="geometry">
+            <mxPoint x="130.82999999999998" y="240" as="sourcePoint" />
+            <mxPoint x="130.82999999999998" y="280" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-2" target="Meal1JP8hrc1P90qUYBF-9">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-2" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="160" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-29" value="User" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-10">
+          <mxGeometry x="-0.788" y="3" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-2" value="Permission Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="160" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-3" target="Meal1JP8hrc1P90qUYBF-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-3" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="280" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-32" value="Third Party" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-7">
+          <mxGeometry x="-0.505" y="1" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-4" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="400" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.019;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-3" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="64.83" y="320" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-8" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="280" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-35" value="First Party" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-33">
+          <mxGeometry x="-0.7899" y="-2" relative="1" as="geometry">
+            <mxPoint x="-33" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-9" target="Meal1JP8hrc1P90qUYBF-8">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.1;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-3" target="Meal1JP8hrc1P90qUYBF-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-9" target="Meal1JP8hrc1P90qUYBF-14">
+        <mxCell id="Meal1JP8hrc1P90qUYBF-36" value="Second Party" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-34">
+          <mxGeometry x="-0.8667" relative="1" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-3" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="89.83" y="280" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.188;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-4" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-40" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-37">
+          <mxGeometry x="-0.8526" y="-3" relative="1" as="geometry">
+            <mxPoint x="2" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-4" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="820" />
+              <mxPoint x="290" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-41" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-38">
+          <mxGeometry x="-0.934" y="-3" relative="1" as="geometry">
+            <mxPoint x="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-4" value="Client is Oauth 2.0 capable?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="249.82999999999998" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.488;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-8" target="Meal1JP8hrc1P90qUYBF-28">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-9" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="280" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-42" value="Second or Third Party" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-39">
+          <mxGeometry x="-0.6771" y="-2" relative="1" as="geometry">
+            <mxPoint x="-8" y="-72" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-12" value="Private APIs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="560" width="160" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.6;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-8" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="541.41" y="1030" as="targetPoint" />
+            <mxPoint x="538.2433333333335" y="359.99666666666656" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="530" y="960" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-13" value="Public APIs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="560" width="620" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-44" value="First Party" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Meal1JP8hrc1P90qUYBF-43">
+          <mxGeometry x="-0.8444" y="-3" relative="1" as="geometry">
+            <mxPoint x="33" as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-14" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="400" width="80" height="80" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-8" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="489.83" y="280" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-16" value="WAF (App Gateway)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="610" width="800" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-11" value="SPA / User Agent &lt;br&gt;Based App" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-9" target="Meal1JP8hrc1P90qUYBF-8">
+          <mxGeometry x="-0.0028" y="-20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-17" value="Transport Layer Security (TLS)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="660" width="800" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-15" value="Native App" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-9" target="Meal1JP8hrc1P90qUYBF-14">
+          <mxGeometry y="-30" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-18" value="IP Whilelist" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="720" width="90" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-9" value="Client Type?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="689.83" y="280" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-19" value="Two-way SSL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="720" width="90" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-12" value="Private APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="560" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-20" value="OAuth 2.0 (Client Credentials)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="220" y="720" width="100" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-13" value="Public APIs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="229.83" y="560" width="590.17" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-21" value="OAuth 2.0 (Implicit)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="720" width="100" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-14" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="440" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-22" value="OAuth 2.0 (Password)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="720" width="100" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-14" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="850" />
+              <mxPoint x="730" y="850" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-23" value="OAuth 2.0 (Authorisation Code)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="640" y="720" width="160" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.94;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Meal1JP8hrc1P90qUYBF-14" target="Meal1JP8hrc1P90qUYBF-28">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="440" />
+              <mxPoint x="800" y="720" />
+              <mxPoint x="802" y="720" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-24" value="HTTP Basic Auth" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="790" width="90" height="90" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-14" value="Client Trust Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="689.83" y="400" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-25" value="JSON and XML Threat Protection" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="110" y="790" width="690" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-16" value="WAF (App Gateway)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="610" width="770.17" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-26" value="CORS" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="840" width="460" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-17" value="Transport Layer Security (TLS)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="660" width="770.17" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-27" value="Rate Limiting / Throttling" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="900" width="800" height="40" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-18" value="IP Whilelist" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="720" width="90" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Meal1JP8hrc1P90qUYBF-28" value="API Resource" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry y="960" width="800" height="50" as="geometry" />
+        <mxCell id="Meal1JP8hrc1P90qUYBF-19" value="Two-way SSL" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="159.82999999999998" y="720" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-20" value="OAuth 2.0 (Client Credentials)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="269.83" y="720" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-21" value="OAuth 2.0 (Implicit)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="389.83" y="720" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-22" value="OAuth 2.0 (Password)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="509.83" y="720" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-23" value="OAuth 2.0 (Authorisation Code)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="640" y="720" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-24" value="HTTP Basic Auth" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="790" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-25" value="JSON and XML Threat Protection" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="159.82999999999998" y="790" width="690" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-26" value="CORS" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="389.83" y="840" width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-27" value="Rate Limiting / Throttling" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="900" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-28" value="API Resource" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="49.83" y="960" width="800" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
