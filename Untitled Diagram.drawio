@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-07T05:00:40.244Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="eErSDjCLL-XPtw7kJ377" version="16.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-01-07T05:05:59.789Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.113 Safari/537.36" etag="zzFi529sIYcn7nFw9ZyI" version="16.2.2" type="github">
   <diagram id="lh8g20T3pPVSp0PFc99V" name="Page-1">
-    <mxGraphModel dx="1042" dy="547" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="613" dy="335" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,6 +48,30 @@
         </mxCell>
         <mxCell id="Meal1JP8hrc1P90qUYBF-14" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="640" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="610" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="660" width="800" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-18" value="IP Whilelist" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry y="720" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-19" value="Two-way SSL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="720" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-20" value="OAuth 2.0 (Client Credentials)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="720" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-21" value="OAuth 2.0 (Implicit)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="720" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-22" value="OAuth 2.0 (Password)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="720" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Meal1JP8hrc1P90qUYBF-23" value="OAuth 2.0 (Authorisation Code)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="720" width="160" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
