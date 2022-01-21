@@ -27,3 +27,4 @@
 		* Example: 
 			- Request: /api/cities/Australia 
 			- Response: [ { "city": "Archerfield Aerodrome" }, { "city": "Amberley Aerodrome" }, { "city": "Alice Springs Aerodrome" } ]
+3. Summary
